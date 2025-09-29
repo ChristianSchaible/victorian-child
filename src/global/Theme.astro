@@ -1,7 +1,6 @@
 ---
 // we can import fonts here, after installing them via Fontsource
 // see https://fontsource.org/docs/installation for instructions
-import "@fontsource/karla";
 import '@fontsource/unifrakturmaguntia';
 import '@fontsource-variable/crimson-pro';
 ---
@@ -9,13 +8,13 @@ import '@fontsource-variable/crimson-pro';
 <style is:global>
   /* We can use this style tag to set up colors, fonts, etc. */
   :root {
-    --color-background: rgb(24, 0, 24);
+    --color-background: rgb(0, 0, 0);
     --color-text: rgb(240, 240, 240);
-    --color-accent: rgb(0, 200, 255);
+    --color-accent: #FFFF00;
     --color-focus-ring: rgb(255, 0, 255);
 
-    --font-body:'@fontsource-variable/crimson-pro';
-    --font-headings:'UnifrakturMaguntia', system-ui;
+    --font-body:'Crimson Pro Variable', serif;;
+    --font-headings:'UnifrakturMaguntia';
 
     font-size: 18px;
 
@@ -30,10 +29,12 @@ import '@fontsource-variable/crimson-pro';
     color: var(--color-text);
     font-family: var(--font-body);
   }
-  h1,{
-    color: var(--color-accent);
+  h1{
     font-family: var(--font-headings);
+    font-size: 5rem;
+    color:var(--color-accent);
   }
+
   h2,
   h3,
   h4,
