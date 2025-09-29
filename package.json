@@ -9,7 +9,9 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@fontsource-variable/crimson-pro": "^5.2.8",
     "@fontsource/karla": "^5.2.8",
+    "@fontsource/unifrakturmaguntia": "^5.2.8",
     "astro": "^5.14.1"
   }
 }
