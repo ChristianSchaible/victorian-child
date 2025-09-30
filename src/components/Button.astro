@@ -1,0 +1,25 @@
+---
+const {title="Button",href="/"} = Astro.props;
+---
+
+<a class="btn" href={href}>{title}</a>
+<style>
+    .btn {
+    display: flex;
+    width: fit-content;
+    background-color: rgba(0, 0, 0, 0.469);
+    border: 1px solid var(--color-accent);
+    box-shadow: 5px 4px 20px rgba(0, 0, 0, 0.781);
+    font-size: 2vw;
+    color: white;
+    text-decoration: none;
+    padding: var(--margin);)
+    margin: var(--margin);
+    }
+
+  a.btn:hover {
+    background-color: var(--color-accent);
+    color: black;
+  }
+}
+    </style>

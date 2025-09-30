@@ -7,26 +7,26 @@ import { Content as SampleMarkdown } from "@content/sample-markdown.md";
 import { Image } from "astro:assets";
 import TwoColumns from "@components/TwoColumns.astro";
 import PropCard from "@components/PropCard.astro";
+import Hero from "@components/Hero.astro";
+import HeroImg from "/workspaces/victorian-child/src/assets/images/header.jpg";
+import Button from "@components/Button.astro";
+import Header from "/workspaces/victorian-child/src/components/Header.astro";
 ---
 
-<Layout title="Astro Starter">
-  <Container>
-    <Image src={AstroLogo} alt=""/>
-    <h1>h1</h1>
-    <TwoColumns>
-      <h2 slot="left">Left Column</h1>
-      <p slot="left">This is the left column content.</p>
-      <h2 slot="mid">Middle Column</h1>
-      <p slot="mid">This is the middle column content.</p>
-      <h2 slot="right">Right Column</h1>
-      <p slot="right">This is the right column content.</p>
-    </TwoColumns>
-    <PropCard 
-      title="Sample Prop Card" 
-      imgSrc={AstroLogo}
-      ctaUrl="https://example.com"
-    />
-    <SampleComponent text="This is a sample component!" />
-    <SampleMarkdown />
-  </Container>
+<Layout>
+  <Header>  
+  </Header>
+    <Hero imgSrc={HeroImg} >
+    <h1 slot="header"> Send a Victorian Child into a Coma:</h1>
+    
+</Hero>
+    
 </Layout>
+
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+</style>

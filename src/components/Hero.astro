@@ -1,0 +1,52 @@
+---
+const { title, imgSrc, ctaUrl } = Astro.props;
+import { Image } from "astro:assets";
+import Button from "@components/Button.astro";
+---
+
+<section class="hero">
+  <div class="hero-image">
+    <div class="hero-content">
+      <slot name="header"/>
+      <div class="nav">
+        <Button name="b1" title="What is a Victorian Child?" href="/" />
+        <Button name="b2" title="What is a Coma?" href="/about" />
+        <Button name="b3" title="Ways to Send a Victorian Child into a Coma" href="/contact" />
+        <Button name="b4" title="Why?" href="/blog" /> 
+        <Button name="b4" title="How?" href="/blog" />     
+      </div>
+    </div>
+    <div class="hero-img-bg">
+  <Image src={imgSrc} alt="Hero Image" fit="cover" style="width:100vw;height:100vh;object-fit:cover;object-position:center;position:absolute;top:0;left:0;z-index:1;" />
+    </div>
+  </div>
+</section>
+
+<style> 
+  .hero {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    
+  }
+  .hero-content {
+      margin:var(--margin);
+      padding:var(--padding);
+    position: sticky;
+     top: 0;
+    z-index: 100;
+    width: 100vw;
+  }
+  .nav {
+    ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+    z-index: 100;
+
+  }
+</style>
