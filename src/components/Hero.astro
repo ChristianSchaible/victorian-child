@@ -7,7 +7,9 @@ import Button from "@components/Button.astro";
 <section class="hero">
   <div class="hero-image">
     <div class="hero-content">
+      <div class="Title">
       <slot name="header"/>
+      </div>
       <div class="nav">
         <Button name="b1" title="What is a Victorian Child?" href="#vchild" />
         <Button name="b2" title="What is a Coma?" href="#coma" />
@@ -42,8 +44,6 @@ import Button from "@components/Button.astro";
   }
   .nav {
     display: flex;
-    position: sticky;
-    top: 0px;
     flex-direction: row;
     justify-content: space-between;
     gap: 1rem;
@@ -51,8 +51,26 @@ import Button from "@components/Button.astro";
 
   }
   @media (max-width: 1100px) {
+    .hero {
+      height: 100vh;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .title {
+      font-size: 1.5rem;
+    
+    }
     body {
       font-size: 4vw;
+    }
+    .nav {
+      align-items: center;
+      flex-direction: column;
+      gap: .1rem;
+      
+    }
+
     }
 
 </style>

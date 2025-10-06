@@ -7,10 +7,10 @@ const {title="Button",href="/"} = Astro.props;
     .btn {
     display: flex;
     width: fit-content;
-    background-color: rgba(0, 0, 0, 0.469);
+    background-color: rgba(0, 0, 0, 0.808);
     border: 1px solid var(--color-accent);
     box-shadow: 5px 4px 20px rgba(0, 0, 0, 0.781);
-    font-size: 2vw;
+    font-size: 1.5rem;
     color: white;
     text-decoration: none;
     padding: var(--margin);)
@@ -21,5 +21,13 @@ const {title="Button",href="/"} = Astro.props;
     background-color: var(--color-accent);
     color: black;
   }
+   @media (max-width: 1100px) {
+    .btn {
+      font-size: 1rem;
+      padding: var(--padding);
+      margin: var(--margin);
+      width: 100%;
+    }
+
 }
     </style>
