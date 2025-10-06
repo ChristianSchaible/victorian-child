@@ -1,0 +1,57 @@
+---
+const {title="Button"} = Astro.props
+---
+<section class="accordian-section">
+<div class="accordian" title="{title}">
+    <details>
+        <summary>{title}</summary>
+        <div class="content"><slot /></div>
+    </details>
+</div>
+</section>
+
+<style> 
+.accordian-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin:0;
+}
+.accordian {
+    width: 90vw;
+    border-radius: 25px;
+    margin: var(--margin);
+
+summary {
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 15px;
+    padding: 10px;
+    cursor: pointer;
+    margin:0;
+}
+summary:hover {
+    background-color: var(--color-accent);
+    color: black;
+}
+.content {
+    font-size: 1.2rem;
+}
+details[open] {
+    background-color: var(--color-accent);
+    color: rgb(0, 0, 0);
+    border-radius: 15px;
+    padding: 10px;
+}
+details[open] summary {
+    background-color: #fff700;
+    color: #000;
+    
+}
+}
+}
+</style>
+

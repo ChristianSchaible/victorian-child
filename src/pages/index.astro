@@ -17,20 +17,38 @@ import V1 from "/workspaces/victorian-child/src/assets/images/victorianchild1.av
 import Whatchild from "/workspaces/victorian-child/src/components/Markdown/WhatChild.md";
 import Whatcoma from "/workspaces/victorian-child/src/components/Markdown/WhatComa.md";
 import V2 from "/workspaces/victorian-child/src/assets/images/childsleep.avif";
+import Accordian from "@components/Accordian.astro";
 ---
 
 <Layout>
   <Header>  
   </Header>
-    <Hero imgSrc={HeroImg} >
+  <Hero imgSrc={HeroImg} >
     <h1 slot="header"> Send a Victorian Child into a Coma:</h1>
   </Hero>
-  <Card title="What is a Victorian Child?" imgSrc={V1} ctaUrl="/">
-    <Whatchild/>
-    </Card> 
-  <CardReverse title="What is a Coma?" imgSrc={V2} ctaUrl="/">
-    <Whatcoma/>
-    </CardReverse> 
+  <div class="vchild">
+    <Card title="What is a Victorian Child?" imgSrc={V1} ctaUrl="/">
+      <Whatchild/>
+    </Card>     
+  </div>
+  <div class="coma">
+    <CardReverse title="What is a Coma?" imgSrc={V2} ctaUrl="/">
+      <Whatcoma/>
+    </CardReverse>     
+  </div>
+  <div class="top10">
+  <Accordian title="Make Them Play a Game of Fortnite Battle Royale">
+    A flying bus drops them onto an island where Sabrina Carpenter is running around with a bazooka. Neon dance moves, chaotic building, and tween war cries. They wouldn’t survive the chorus.
+  </Accordian>
+  <Accordian title="Learn More">
+    <p>Victorian children were often sent into comas for various reasons, including medical</p>
+  </Accordian>
+  <Accordian title="Learn More">
+    <p>Victorian children were often sent into comas for various reasons, including medical</p>
+  </Accordian>
+</div>
+
+
 
 
 
