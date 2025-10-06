@@ -1,0 +1,3 @@
+Victorian children were delicate, proper, and easily overwhelmed. Their worlds were filled with strict rules, endless etiquette, and fainting couches. Modern life, on the other hand, is loud, chaotic, and completely absurd. TikTok dances, livestream meltdowns, neon lights, and boba milkshakes are basically weapons of mass overstimulation to a child from the 1800s.
+
+Sending a Victorian child into a coma isn’t evil—it’s a service. It’s a way to introduce them to the chaos, absurdity, and sensory overload of the 21st century. Basically: too much sparkle, too many noises, too much drama, all at once. They won’t survive the shock… but they’ll never forget it.

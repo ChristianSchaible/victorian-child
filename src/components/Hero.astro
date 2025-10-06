@@ -9,11 +9,11 @@ import Button from "@components/Button.astro";
     <div class="hero-content">
       <slot name="header"/>
       <div class="nav">
-        <Button name="b1" title="What is a Victorian Child?" href="/" />
-        <Button name="b2" title="What is a Coma?" href="/about" />
-        <Button name="b3" title="Ways to Send a Victorian Child into a Coma" href="/contact" />
-        <Button name="b4" title="Why?" href="/blog" /> 
-        <Button name="b4" title="How?" href="/blog" />     
+        <Button name="b1" title="What is a Victorian Child?" href="#vchild" />
+        <Button name="b2" title="What is a Coma?" href="#coma" />
+        <Button name="b3" title="Ways to Send a Victorian Child into a Coma" href="#top10" />
+        <Button name="b4" title="Why?" href="#Why" /> 
+        <Button name="b5" title="How?" href="#How" />     
       </div>
     </div>
     <div class="hero-img-bg">
@@ -50,4 +50,9 @@ import Button from "@components/Button.astro";
     z-index: 100;
 
   }
+  @media (max-width: 1100px) {
+    body {
+      font-size: 4vw;
+    }
+
 </style>

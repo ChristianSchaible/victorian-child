@@ -18,6 +18,8 @@ import Whatchild from "/workspaces/victorian-child/src/components/Markdown/WhatC
 import Whatcoma from "/workspaces/victorian-child/src/components/Markdown/WhatComa.md";
 import V2 from "/workspaces/victorian-child/src/assets/images/childsleep.avif";
 import Accordian from "@components/Accordian.astro";
+import Why from "/workspaces/victorian-child/src/components/Markdown/Why.md"
+import How from "/workspaces/victorian-child/src/components/Markdown/How.md"
 ---
 
 <Layout>
@@ -26,32 +28,64 @@ import Accordian from "@components/Accordian.astro";
   <Hero imgSrc={HeroImg} >
     <h1 slot="header"> Send a Victorian Child into a Coma:</h1>
   </Hero>
-  <div class="vchild">
-    <Card title="What is a Victorian Child?" imgSrc={V1} ctaUrl="/">
+  
+  <section id="vchild">
+    <Card title="What is a Victorian Child?" imgSrc={V1} alt="Victorian Child" ctaUrl="/">
       <Whatchild/>
     </Card>     
-  </div>
-  <div class="coma">
+  </section>
+  
+  <section id="coma">
     <CardReverse title="What is a Coma?" imgSrc={V2} ctaUrl="/">
       <Whatcoma/>
     </CardReverse>     
-  </div>
-  <div class="top10">
-  <Accordian title="Make Them Play a Game of Fortnite Battle Royale">
-    A flying bus drops them onto an island where Sabrina Carpenter is running around with a bazooka. Neon dance moves, chaotic building, and tween war cries. They wouldn’t survive the chorus.
-  </Accordian>
-  <Accordian title="Learn More">
-    <p>Victorian children were often sent into comas for various reasons, including medical</p>
-  </Accordian>
-  <Accordian title="Learn More">
-    <p>Victorian children were often sent into comas for various reasons, including medical</p>
-  </Accordian>
-</div>
+  </section>
+  
+  <section id="top10" class="top">
+    <h2 style="text-align:center; margin-top:2rem; margin-bottom:2rem; font-size: 4vw;">Top 10 Ways to Send a Victorian Child into a Coma</h1>
+    <Accordian title="Make Them Play a Game of Fortnite Battle Royale">
+      A flying bus drops them onto an island where Sabrina Carpenter is running around with a bazooka. Neon dance moves, chaotic building, and tween war cries. They wouldn’t survive the chorus.
+    </Accordian>
+    <Accordian title="Make Them Drink McDonald’s Sprite">
+      Bubbles, sugar, and fizz overload. Their lungs wouldn’t stand a chance.
+    </Accordian>
+    <Accordian title="Introduce Them to Red 40">
+      Sour Patch Kids, Nerds Gummy Clusters, Takis, Depression, Gut Problems.
+    </Accordian>
+    <Accordian title="Make Them Watch a Drag Race Lip Sync">
+      Dramatic faces, glitter, high kicks, and sudden splits. Unholy levels of camp.
+    </Accordian>
+    <Accordian title="Drag Queens">
+      Singing, dancing, towering wigs, and over-the-top gestures. Total sensory shock.
+    </Accordian>
+    <Accordian title="Make Them Eat Taco Bell in a Car While Blasting an Early 2000s Playlist">
+      Crunchwraps, Britney Spears, and neon-colored Baja Blast. Apocalypse in a tortilla.
+    </Accordian>
+    <Accordian title="Show Them the 2024 US Presidential Debate Between Trump and Biden">
+      Two old men yelling, confusing arguments, and an audience clapping at the wrong times. Their monocles would shatter.
+    </Accordian>
+    <Accordian title="Show Them the 2024 Election Results">
+      Angry captions, confusing hashtags, and nonstop notifications. Brain meltdown guaranteed.
+    </Accordian>
+    <Accordian title="Idk Show Them an iPhone or Something?">
+      A glowing glass brick that plays moving pictures, talks back, and knows where you are at all times. Pure witchcraft.
+    </Accordian>
+    <Accordian title="Show Them Grindr">
+      Unexpected adult content, cryptic abbreviations, and dating chaos in your pocket. Absolutely fatal.
+    </Accordian>
+  </section>
 
-
-
-
-
+  <section id="Why">
+    <Card title="Why send a Victorian child into a coma?" imgSrc={V1} alt="Victorian Child" ctaUrl="/">
+      <Why/>
+    </Card>     
+  </section>
+  
+  <section id="How">
+    <CardReverse title="How to Find a Victorian Child:" imgSrc={V2} ctaUrl="/">
+      <How/>
+    </CardReverse>     
+  </section>
 </Layout>
 
 <style>
@@ -59,7 +93,9 @@ import Accordian from "@components/Accordian.astro";
     margin: 0;
     padding: 0;
   }
-  
+  .top { 
+    margin-bottom: 4rem;
+  }
 </style>
 
 <style is:global>
@@ -68,5 +104,30 @@ import Accordian from "@components/Accordian.astro";
     text-align: left;
     color: white;
   }
+   
+  }
+  
 </style>
- 
+
+<script>
+ /**
+ * Details/summary HTML element
+ * Only open one element at a time
+ */
+if (document.querySelector('details')) {
+    // Fetch all the details elements
+    const details = document.querySelectorAll('details');
+
+    // Add onclick listeners
+    details.forEach((targetDetail) => {
+        targetDetail.addEventListener("click", () => {
+            // Close all details that are not targetDetail
+            details.forEach((detail) => {
+                if (detail !== targetDetail) {
+                    detail.removeAttribute("open");
+                }
+            });
+        });
+    });
+}
+</script>
