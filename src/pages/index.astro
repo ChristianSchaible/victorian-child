@@ -13,6 +13,7 @@ import Button from "@components/Button.astro";
 import Header from "/workspaces/victorian-child/src/components/Header.astro";
 import Card from "@components/Card.astro";
 import V1 from "/workspaces/victorian-child/src/assets/images/victorianchild1.avif";
+import Whatchild from "/workspaces/victorian-child/src/components/Markdown/WhatChild.md";
 ---
 
 <Layout>
@@ -21,21 +22,10 @@ import V1 from "/workspaces/victorian-child/src/assets/images/victorianchild1.av
     <Hero imgSrc={HeroImg} >
     <h1 slot="header"> Send a Victorian Child into a Coma:</h1>
   </Hero>
-  <Card title=" How to:" imgSrc={V1} ctaUrl="/">
-    <p slot="p1"> 1. Find a Victorian Child. </p>
-    <p slot="p2"> 2. Find a way to send them into a coma. </p>
+  <Card title="What is a Victorian Child?" imgSrc={V1} ctaUrl="/">
+    <Whatchild/>
     </Card> 
-  <h1> This is a Card Component </h1>
-  <p> Cards are useful for displaying content in a visually appealing way. </p>
-  <p> You can use them to showcase products, services, or any other type of information. </p>
-  <Button title="Learn More" href="/about" />
-    <h1> This is a Card Component </h1>
-      <h1> This is a Card Component </h1>
-        <h1> This is a Card Component </h1>
-          <h1> This is a Card Component </h1>
-          
-</>
-  </Card> 
+
 
 
 </Layout>
