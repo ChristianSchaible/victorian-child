@@ -1,25 +1,25 @@
 ---
 import Layout from "@layouts/Layout.astro";
-import SampleComponent from "@components/SampleComponent.astro";
-import Container from "@components/Container.astro";
-import AstroLogo from "@assets/images/astro-logo-light-gradient.png";
-import { Content as SampleMarkdown } from "@content/sample-markdown.md";
-import { Image } from "astro:assets";
-import TwoColumns from "@components/TwoColumns.astro";
-import PropCard from "@components/PropCard.astro";
+
 import Hero from "@components/Hero.astro";
 import HeroImg from "/workspaces/victorian-child/src/assets/images/header.jpg";
-import Button from "@components/Button.astro";
 import Header from "/workspaces/victorian-child/src/components/Header.astro";
 import Card from "@components/Card.astro";
+import Accordian from "@components/Accordian.astro";
 import CardReverse from "@components/Card-Reverse.astro";
-import V1 from "/workspaces/victorian-child/src/assets/images/victorianchild1.avif";
+
 import Whatchild from "/workspaces/victorian-child/src/components/Markdown/WhatChild.md";
 import Whatcoma from "/workspaces/victorian-child/src/components/Markdown/WhatComa.md";
-import V2 from "/workspaces/victorian-child/src/assets/images/childsleep.avif";
-import Accordian from "@components/Accordian.astro";
 import Why from "/workspaces/victorian-child/src/components/Markdown/Why.md"
 import How from "/workspaces/victorian-child/src/components/Markdown/How.md"
+
+import V2 from "/workspaces/victorian-child/src/assets/images/childsleep.avif";
+import V1 from "/workspaces/victorian-child/src/assets/images/victorianchild1.avif";
+import V3 from "/workspaces/victorian-child/src/assets/images/the-cleveland-museum-of-art-ELD31iIlk5s-unsplash.jpg"
+import V4 from "/workspaces/victorian-child/src/assets/images/europeana-Jn8V5dHrdnM-unsplash.jpg"
+
+import Footer from "@components/Footer.astro";
+
 ---
 
 <Layout>
@@ -42,7 +42,7 @@ import How from "/workspaces/victorian-child/src/components/Markdown/How.md"
   </section>
   
   <section id="top10" class="top">
-    <h2 style="text-align:center; margin-top:2rem; margin-bottom:2rem; font-size: 4vw;">Top 10 Ways to Send a Victorian Child into a Coma</h1>
+    <h2>Top 10 Ways to Send a Victorian Child into a Coma</h1>
     <Accordian title="Make Them Play a Game of Fortnite Battle Royale">
       A flying bus drops them onto an island where Sabrina Carpenter is running around with a bazooka. Neon dance moves, chaotic building, and tween war cries. They wouldn’t survive the chorus.
     </Accordian>
@@ -76,15 +76,19 @@ import How from "/workspaces/victorian-child/src/components/Markdown/How.md"
   </section>
 
   <section id="Why">
-    <Card title="Why send a Victorian child into a coma?" imgSrc={V1} alt="Victorian Child" ctaUrl="/">
+    <Card title="Why send a Victorian child into a coma?" imgSrc={V3} alt="Victorian Child" ctaUrl="/">
       <Why/>
     </Card>     
   </section>
   
   <section id="How">
-    <CardReverse title="How to Find a Victorian Child:" imgSrc={V2} ctaUrl="/">
+    <CardReverse title="How to Find a Victorian Child:" imgSrc={V4} ctaUrl="/">
       <How/>
     </CardReverse>     
+  </section>
+  <section id="contact">
+  <footer>
+    <Footer/>
   </section>
 </Layout>
 
@@ -96,20 +100,32 @@ import How from "/workspaces/victorian-child/src/components/Markdown/How.md"
   .top { 
     margin-bottom: 4rem;
   }
+  h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+ 
 </style>
 
 <style is:global>
+
   header h1 {
     font-size: 2.5rem;
     text-align: left;
     color: white;
   }
-   
+   ul {
+    list-style-type: disc;
+    padding-left: 1.5rem; 
+
+    }
   }
   
 </style>
 
-<script>
+<!-- <script>
  /**
  * Details/summary HTML element
  * Only open one element at a time
@@ -130,4 +146,4 @@ if (document.querySelector('details')) {
         });
     });
 }
-</script>
+</script> -->

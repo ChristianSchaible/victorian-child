@@ -14,7 +14,7 @@ import { Image } from "astro:assets";
     .card {
         background-color: rgba(255, 255, 255, 0.1);
         border: 2px solid white;
-        border-radius: 8px;
+        border-radius: var(--border-radius);
         overflow: hidden;
     }
     .card img {
@@ -33,7 +33,7 @@ import { Image } from "astro:assets";
         background-color: var(--color-accent);
         color: var(--color-background);
         text-decoration: none;
-        border-radius: 4px;
+        border-radius: var(--border-radius);
     }
     .btn:hover {
         background-color: white;

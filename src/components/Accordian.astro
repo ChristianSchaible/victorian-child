@@ -3,7 +3,7 @@ const {title="Button"} = Astro.props
 ---
 <section class="accordian-section">
 <div class="accordian" title="{title}">
-    <details>
+    <details name="accordion">
         <summary>{title}</summary>
         <div class="content"><slot /></div>
     </details>
@@ -20,7 +20,6 @@ const {title="Button"} = Astro.props
 }
 .accordian {
     width: 90vw;
-    border-radius: 25px;
     margin: var(--margin);
 
 summary {
@@ -28,7 +27,7 @@ summary {
     font-weight: bold;
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
-    border-radius: 15px;
+    border-radius: var(--border-radius);
     padding: 10px;
     cursor: pointer;
     margin:0;
@@ -44,7 +43,7 @@ summary:hover {
 details[open] {
     background-color: var(--color-accent);
     color: rgb(0, 0, 0);
-    border-radius: 15px;
+    border-radius:var(--border-radius);
     padding: 10px;
     
 }

@@ -22,36 +22,39 @@ import { Image } from "astro:assets";
     align-items: center;
     width: 100%;
     padding: 4rem;
-
     font-weight: 600;
+    box-shadow: var(--box-shadow);
+    z-index: 100;
   }
 
   .container {
     position: relative;
-    width: 80%;
+   width: 50%;
     max-width: 1200px;
   }
 
   .main-image {
-    width: 100%;
+    max-width: 100%;
     height: auto;
     fit: cover;
     display: block;
-    border-radius: 10px;
+    border-radius: var(--border-radius);
   }
 
   .card {
     position: absolute;
     top: 50%;
     right: 0;
-    transform: translate(20%, -50%);
+    transform: translate(20vw, -50%);
     background-color:var(--color-accent);
     color: rgb(0, 0, 0);
-    border-radius: 20px;
+    border-radius: var(--border-radius);
     padding: 3rem;
-    width: 40vw;
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+    width: 55vw;
+    height: auto;
+    box-shadow: var(--box-shadow);
     z-index: 2;
+    font-size: .9rem;
   }
 
   .card h2 {
@@ -62,15 +65,13 @@ import { Image } from "astro:assets";
   }
 
   @media (max-width: 1100px) {
-    .card{
-      font-size: 1rem;
-      padding: 1.5rem;
-    }
+    
     .card-section {
-      padding: 2rem;
+      padding: .5rem;
     }
     .container {
       width: 95%;
+      
 
     }
 
@@ -80,7 +81,9 @@ import { Image } from "astro:assets";
       left: 0;
       top: 0;
       width: 100%;
-      margin-top: 1.5rem;
+      font-size: 1rem;
+      padding: 1.5rem;
+      margin-top: 9px;
     }
   }
 </style>

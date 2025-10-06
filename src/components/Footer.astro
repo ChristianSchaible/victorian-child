@@ -1,0 +1,29 @@
+---
+import Button from "./Button.astro"
+---
+<footer class="footer">
+  <div class="footer-content">
+    </div>
+    <p>&copy; {new Date().getFullYear()} Victorian Child Coma Initiative. All rights reserved.</p>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-accent);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100vw;
+  }
+  .footer p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: black
+    }
+    </style>
