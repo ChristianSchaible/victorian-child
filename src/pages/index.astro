@@ -42,7 +42,8 @@ import Footer from "@components/Footer.astro";
   </section>
   
   <section id="top10" class="top">
-    <h2>Top 10 Ways to Send a Victorian Child into a Coma</h1>
+    <h2>Top 10 Ways to Send a Victorian Child into a Coma</h2>
+      <div class="accordian">
     <Accordian title="Make Them Play a Game of Fortnite Battle Royale">
       A flying bus drops them onto an island where Sabrina Carpenter is running around with a bazooka. Neon dance moves, chaotic building, and tween war cries. They wouldn’t survive the chorus.
     </Accordian>
@@ -73,6 +74,7 @@ import Footer from "@components/Footer.astro";
     <Accordian title="Show Them Grindr">
       Unexpected adult content, cryptic abbreviations, and dating chaos in your pocket. Absolutely fatal.
     </Accordian>
+    </div>
   </section>
 
   <section id="Why">
@@ -98,14 +100,27 @@ import Footer from "@components/Footer.astro";
     padding: 0;
   }
   .top { 
-    margin-bottom: 4rem;
+    background-color: white;
+    padding: var(--padding);
+    background-image:url("/workspaces/victorian-child/src/assets/images/photo-1726329143715-c546204d00a1.avif");
   }
+  .accordian {
+    margin: var();
+  }
+  .top h2 {
+    background-color: rgba(0, 0, 0, 0.911);
+    padding: var(--padding);
+    border-radius: var(--border-radius);
+    margin: var(--margin)
+  }
+
   h2 {
     text-align: center;
     font-size: 2rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
   }
+  
  
 </style>
 
@@ -113,37 +128,16 @@ import Footer from "@components/Footer.astro";
 
   header h1 {
     font-size: 2.5rem;
+    
     text-align: left;
     color: white;
+
   }
    ul {
     list-style-type: disc;
     padding-left: 1.5rem; 
-
     }
   }
   
 </style>
 
-<!-- <script>
- /**
- * Details/summary HTML element
- * Only open one element at a time
- */
-if (document.querySelector('details')) {
-    // Fetch all the details elements
-    const details = document.querySelectorAll('details');
-
-    // Add onclick listeners
-    details.forEach((targetDetail) => {
-        targetDetail.addEventListener("click", () => {
-            // Close all details that are not targetDetail
-            details.forEach((detail) => {
-                if (detail !== targetDetail) {
-                    detail.removeAttribute("open");
-                }
-            });
-        });
-    });
-}
-</script> -->

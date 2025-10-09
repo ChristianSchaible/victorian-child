@@ -10,7 +10,6 @@ import { Image } from "astro:assets";
       <h2>{title}</h2>
       <slot />
     </div>
-
   </div>
 </section>
 
@@ -21,7 +20,7 @@ import { Image } from "astro:assets";
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 4rem;
+    padding: var(--padding);
     font-weight: 600;
     box-shadow: var(--box-shadow);
     z-index: 100;
@@ -31,14 +30,16 @@ import { Image } from "astro:assets";
     position: relative;
    width: 50%;
     max-width: 1200px;
+    margin: var(--margin)
   }
 
   .main-image {
     max-width: 100%;
     height: auto;
-    fit: cover;
-    display: block;
+    fit: contain;
+    display: flex;
     border-radius: var(--border-radius);
+     transform: translate(-20vw, 0);
   }
 
   .card {
@@ -84,6 +85,9 @@ import { Image } from "astro:assets";
       font-size: 1rem;
       padding: 1.5rem;
       margin-top: 9px;
+    }
+    .main-image { 
+      transform: none;
     }
   }
 </style>

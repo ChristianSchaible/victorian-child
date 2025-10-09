@@ -20,7 +20,7 @@ import { Image } from "astro:assets";
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 4rem;
+    padding: var(--padding);
         box-shadow: var(--box-shadow);
   }
 
@@ -28,7 +28,9 @@ import { Image } from "astro:assets";
     position: relative;
     width: 50%;
     max-width: 1200px;
+    margin: var(--margin);)
   }
+/* Main image should roughly aligned to the rightside of the screen, so it isnt completley covered by text */
 
   .main-image {
     width: 100%;
@@ -37,6 +39,8 @@ import { Image } from "astro:assets";
     fit: contain;
     display: flex;
     border-radius: var(--border-radius);
+     transform: translate(20vw, 0);
+    
   }
 
   .card {
@@ -66,6 +70,7 @@ import { Image } from "astro:assets";
     
     .card-section {
       padding: .5rem;
+      
     }
     .container {
       width: 95%;
@@ -81,6 +86,9 @@ import { Image } from "astro:assets";
       font-size: 1rem;
       padding: 1.5rem;
       margin-top: 9px;
+    }
+    .main-image { 
+      transform: none;
     }
   }
   

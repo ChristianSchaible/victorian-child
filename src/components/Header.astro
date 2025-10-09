@@ -2,22 +2,83 @@
 ---
 
 <header class="site-header">
-  <h1>How to:</h1>
+  <h1 id="dynamic-header">How to:</h1>
 </header>
+
+<script is:inline>
+  const sectionTitles = [
+    { id: 'vchild', title: 'What is a Victorian Child?' },
+    { id: 'coma', title: 'What is a Coma?' },
+    { id: 'top10', title: 'Top 10 Ways to Send a Victorian Child into a Coma:' },
+    { id: 'Why', title: 'Why send a Victorian child into a coma?' },
+    { id: 'How', title: 'How to Find a Victorian Child:' }
+  ];
+
+  function updateHeaderOnScroll() {
+    let currentTitle = 'How to:';
+    for (const section of sectionTitles) {
+      const el = document.getElementById(section.id);
+      if (el) {
+        const rect = el.getBoundingClientRect();
+        if (rect.top <= 80 && rect.bottom > 80) {
+          currentTitle = section.title;
+          break;
+        }
+      }
+    }
+    document.getElementById('dynamic-header').textContent = currentTitle;
+  }
+
+  window.addEventListener('scroll', updateHeaderOnScroll);
+  window.addEventListener('DOMContentLoaded', updateHeaderOnScroll);
+</script>
 
 <style>
   .site-header {
     position: fixed;
     padding: var(--padding);
-    background-color: rgb(0, 0, 0);
+    background-color: var(--color-accent);
     color: var(--color-accent);
+    mix-blend-mode:difference;
     width: 100vw;
     z-index: 1000000;
   }
-  h1:hover {
-    color: var(--color-accent);
+  h1 {
+    color:black;
+      mix-blend-mode:normal;
   }
+
   @media (max-width: 1100px) {
     body {
       font-size: 4vw;
     }
+  }
+</style>
+
+<script>
+const sectionTitles = [
+  { id: 'vchild', title: 'What is a Victorian Child?' },
+  { id: 'coma', title: 'What is a Coma?' },
+  { id: 'top10', title: 'Top 10 Ways to Send a Victorian Child into a Coma' },
+  { id: 'Why', title: 'Why send a Victorian child into a coma?' },
+  { id: 'How', title: 'How to Find a Victorian Child:' }
+];
+
+function updateHeaderOnScroll() {
+  let currentTitle = 'How to:';
+  for (const section of sectionTitles) {
+    const el = document.getElementById(section.id);
+    if (el) {
+      const rect = el.getBoundingClientRect();
+      if (rect.top <= 80 && rect.bottom > 80) {
+        currentTitle = section.title;
+        break;
+      }
+    }
+  }
+  document.getElementById('dynamic-header').textContent = currentTitle;
+}
+
+window.addEventListener('scroll', updateHeaderOnScroll);
+window.addEventListener('DOMContentLoaded', updateHeaderOnScroll);
+</script>

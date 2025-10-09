@@ -23,11 +23,14 @@ const {title="Button",href="/"} = Astro.props;
 
   a.btn:hover {
     background-color: var(--color-accent);
+    mix-blend-mode: difference;
     color: black;
+
   }
+
    @media (max-width: 1100px) {
     .btn {
-    
+
       font-size: 1rem;
       padding: var(--padding);
       margin: 5px;

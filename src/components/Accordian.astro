@@ -16,7 +16,6 @@ const {title="Button"} = Astro.props
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin:0;
 }
 .accordian {
     width: 90vw;
@@ -24,15 +23,14 @@ const {title="Button"} = Astro.props
 
 summary {
     font-size: 1.5rem;
-    font-weight: bold;
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.911);;
+    color: rgb(255, 255, 255);
     border-radius: var(--border-radius);
     padding: 10px;
     cursor: pointer;
     margin:0;
 } 
-}
+
 summary:hover {
     background-color: var(--color-accent);
     color: black;
