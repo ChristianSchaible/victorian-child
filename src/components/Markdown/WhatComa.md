@@ -1,6 +1,5 @@
+A **coma** is when someone is completely unconscious and can’t be woken up—no matter how hard you try. They don’t respond to light, sound, or touch, and they’re totally unaware of what’s happening around them.
 
-A **coma** is a medical state where a person is completely unconscious and cannot be awakened, even with strong stimulation. People in a coma don’t respond to light, sound, or touch and are unaware of their surroundings.
-
-- It’s not sleep—a person in a coma is deeply unresponsive.
-- It can happen due to things like serious head injuries, illnesses, or extreme shock.
-- Comas can be temporary or long-term, depending on the cause.
+- **Not just sleep:** A coma isn’t regular sleep—it’s much deeper, and the person doesn’t wake up naturally.  
+- **Causes:** It can happen after a serious head injury, illness, or major physical or emotional shock.  
+- **Duration:** Some comas last only a short time, while others can go on for weeks, months, or even longer.  

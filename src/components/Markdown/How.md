@@ -1,14 +1,20 @@
-Finding a Victorian child isn’t easy—they’re delicate, proper, and usually fainting somewhere in a parlor. Here’s a foolproof guide:
 
-- **Check the Drawing Room**
-    - Most Victorian children are hiding behind velvet curtains, clutching a stiff collar, and practicing curtseys.
-- **Look for Fainting Couches**
-    - If there’s a small body collapsed dramatically on one, congratulations: you’ve found one.
-- **Follow the Etiquette Manuals**
-    - They carry tiny books on proper manners everywhere, like backpacks of doom.
-- **Listen for Gasps and Squeaks**
-    - A sudden shout, cough, or polite scream usually signals a startled Victorian child nearby.
-- **Check the Tea Table**
-    - Nothing terrifies a Victorian child more than a spilled teacup or someone daring to eat a cookie with their fingers.
 
-**_Pro tip:_** Keep your smartphone, glitter, or TikTok ready. You’ll need it for maximum chaos once you’ve found them.
+Finding a Victorian child isn’t exactly easy—they’re fragile, overly proper, and probably fainting in a corner somewhere. But don’t worry, here’s your go-to guide:
+
+- **Check the Drawing Room**  
+  They love hiding behind heavy velvet curtains, clutching their lace collars, and practicing their little bows.  
+
+- **Look for Fainting Couches**  
+  Spot a tiny human dramatically passed out on one? Congrats—you’ve found your Victorian child.  
+
+- **Follow the Etiquette Manuals**  
+  They carry those everywhere. Think of them as doom-filled backpacks full of rules about forks.  
+
+- **Listen for Gasps and Squeaks**  
+  Any sudden “oh my!” or delicate cough probably means you’re close.  
+
+- **Check the Tea Table**  
+  A dropped spoon or someone daring to eat with their fingers is pure horror to them.  
+
+**_Pro tip:_** Have your phone, some glitter, or a TikTok sound ready. Nothing sends them into a polite panic faster.
