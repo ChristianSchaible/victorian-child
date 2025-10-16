@@ -1,6 +1,7 @@
 ---
 const { title = "Card", imgSrc } = Astro.props;
 import { Image } from "astro:assets";
+import SitePattern from '../assets/images/VCSITEPATTERN.jpg';
 ---
 
 <section class="card-section">
@@ -16,7 +17,7 @@ import { Image } from "astro:assets";
 <style>
   .card-section {
     position: relative;
-    background: url("src/assets/images/VCSITEPATTERN.jpg");
+    background-image: url({SitePattern});
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
