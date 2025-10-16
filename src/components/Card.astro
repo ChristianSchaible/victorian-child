@@ -15,20 +15,39 @@ import { Image } from "astro:assets";
 
 <style>
   .card-section {
-    background-color: var(--color-accent);
+    position: relative;
+    background: url("/workspaces/victorian-child/src/assets/images/VCSITEPATTERN.avif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     padding: var(--padding);
-        box-shadow: var(--box-shadow);
+    box-shadow: var(--box-shadow);
+  }
+
+  .card-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--color-accent);
+    opacity:.85;
+    mix-blend-mode:color;
+    z-index: 1;
+  }
+
+  .card-section > * {
+    position: relative;
+    z-index: 2;
   }
 
   .container {
     position: relative;
     width: 50%;
     max-width: 1200px;
-    margin: var(--margin);)
+    margin: var(--margin);
   }
 /* Main image should roughly aligned to the rightside of the screen, so it isnt completley covered by text */
 
@@ -54,8 +73,8 @@ import { Image } from "astro:assets";
     padding: 3rem;
     width: 55vw;
     box-shadow: var(--box-shadow);
-    z-index: 2;
     font-size: .9rem;
+
   }
 
   .card h2 {
