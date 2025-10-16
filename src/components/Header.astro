@@ -39,7 +39,6 @@
     padding: var(--padding);
     background-color: var(--color-accent);
     color: var(--color-accent);
-    mix-blend-mode:difference;
     width: 100vw;
     z-index: 1000000;
   }
@@ -76,7 +75,6 @@ function updateHeaderOnScroll() {
       }
     }
   }
-  document.getElementById('dynamic-header').textContent = currentTitle;
 }
 
 window.addEventListener('scroll', updateHeaderOnScroll);
